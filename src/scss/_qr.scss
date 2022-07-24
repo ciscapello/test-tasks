@@ -1,0 +1,16 @@
+.qr {
+    max-height: 600px;
+    background: #000;
+    &__content {
+        position: relative;
+        top: -150px;
+    }
+    a img {
+        margin-top: 50px;
+    }
+    &__phone {
+        position: relative;
+        top: -480px;
+        right: -900px;
+    }
+}

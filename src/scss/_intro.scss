@@ -1,0 +1,84 @@
+.intro {
+    background: url('/dist/img/iphone.png') 100% 10%/45% no-repeat,
+    url('/dist/img/background/ellipse1.png') center/cover no-repeat,
+    url('/dist/img/background/line.png') no-repeat 10% 65%,
+    url('/dist/img/background/ellipse2.png') no-repeat 1% 65%,
+     #000;
+    min-height: 700px;
+    &__header {
+        padding-top: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        column-gap: 109px;
+    }
+
+    &__notab {
+        margin-bottom: 45px;
+    }
+    
+    &__login {
+        display: flex;
+        align-items: center;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: start;
+        column-gap: 180px;
+        &_text {
+            display: flex;
+            min-width: 60%;
+            min-height: 700px;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+            h1 {
+                font-family: 'Monterrat', sans-serif;
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 70px;
+            }
+            p {
+                margin-left: 15%;
+                font-family: 'Noto Sans', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 27px;
+            }
+        }
+        &_phone {
+            display: block;
+            position: relative;
+            right: 200px;
+            top: -70px;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        bottom: -150px;
+        h2 {
+            color: #fff;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 70px;
+            &::after {
+                content: "";
+                width: 100px;
+                height: 1px;
+                z-index: 3;
+                background-color: #fff;
+            }
+        }
+        a {
+            z-index: 2;
+        }
+    }
+}

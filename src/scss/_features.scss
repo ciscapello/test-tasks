@@ -1,0 +1,42 @@
+.features {
+    padding-top: 150px;
+    height: 1000px;
+    background: url('/dist/img/background/iphoneback.png') center 300px/50% no-repeat,
+    url('/dist/img/background/flash2.png') 100% 0%/50% no-repeat,
+    #000;
+    &__content {
+        display: block;
+        margin-left: 700px;
+    }
+    &__block {
+        border: 1px solid rgb(97, 82, 82);
+        background:#000;
+        border-radius: 10px;
+        display: inline-block;
+        padding: 20px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        &:nth-child(1) {
+            position: relative;
+            top: 230px;
+            left: 190px;
+        }
+        &:nth-child(2) {
+            position: relative;
+            top: 100px;
+            left: 370px;
+        }
+        &:nth-child(3) {
+            position: relative;
+            top: 470px;
+            left: 290px;
+        }
+        &:nth-child(4) {
+            position: relative;
+            top: 520px;
+            right: 280px;
+        }
+    }
+}

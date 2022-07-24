@@ -1,0 +1,54 @@
+.container {
+    max-width: 1175px;
+    margin: 0 auto;
+}
+
+.block {
+    color: #fff;
+    border: 2px solid rgb(89, 89, 89);
+    border-radius: 8%;
+}
+
+.link {
+    margin-left: 14px;
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    align-self: center;
+    &:hover {
+        color: #4a655e;
+    }
+}
+
+.title {
+    margin-top: 0;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 62px;
+}
+
+.text {
+    color: #fff;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.app {
+    display: flex;
+    column-gap: 25px;
+    a {
+        img {
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}

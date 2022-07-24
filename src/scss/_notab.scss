@@ -1,0 +1,18 @@
+.notab {
+    height: 700px;
+    background: url('/dist/img/background/notabscreen.png') center/40% no-repeat,
+    url('/dist/img/background/iphoneback2.png') center/50% no-repeat,
+    linear-gradient(360deg, #000000 6.8%, rgba(0, 0, 0, 0) 51.62%, #000000 97.38%),
+    url('/dist/img/background/notab2.png') repeat,
+    #000;
+    // &__img {
+    //     box-sizing: border-box;
+    //     position: relative;
+    //     left: 26%;
+    //     top: 190px;
+    //     width: 100%;
+    //     img {
+    //         max-width: 49%;
+    //     }
+    // }
+}

@@ -1,0 +1,366 @@
+@media (min-width: 320px) and (max-width: 425px) {
+
+    .intro {
+        background: url('/dist/img/iphone.png') 200% 30%/70% no-repeat,
+        url('/dist/img/background/ellipse1.png') center/cover no-repeat,
+        #000;
+
+        &__app {
+            margin-bottom: 160px;
+        }
+    
+        &__login {
+            img {
+                display: none;
+            }
+        }
+        &__header {
+            padding: 43px 23px;
+        }
+        &__notab {
+            margin-bottom: 0;
+            align-self: center;
+        }
+        &__container {
+            display: flex;
+            align-items: center;
+            max-height: 400px;
+            img {
+                max-width: 30%;
+            }
+        }
+        &__body {
+            &_text {
+                margin-left: 15px;
+                min-height: 0;
+                justify-content: flex-start;
+                margin-top: none;
+                h1 {
+                    box-sizing: border-box;
+                    max-height: none;
+                    max-width: 200px;
+                    margin-bottom: 0;
+                    font-weight: 700;
+                    font-size: 35px;
+                    line-height: 40px;
+                }
+                p {
+                    max-width: 270px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin-left: 0;
+                }
+            }
+        }
+        &__footer {
+            flex-direction: column;
+            top: 105px;
+            h2 {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 29px;
+            }
+            a {
+                text-align: center;
+            }
+        }
+    }
+
+    .mission {
+        padding-top: 0;
+        &__blocks {
+            margin-top: 0;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        &__block {
+            width: 90%;
+            margin-bottom: 15px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 33px;
+            height: auto;
+            h3 {
+                margin: 0;
+            }
+        }
+        &__about {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            &-phone {
+                position: static;
+                transform: rotate(0deg);
+                max-width: 100%;
+            }
+            &-content {
+                margin-left: 25px;
+            }
+        }
+    }
+
+    .scanner {
+        background: linear-gradient(179.83deg, #000000 -1.85%, rgba(0, 0, 0, 0.67) 11.21%, rgba(0, 0, 0, 0) 54.71%, #000000 83.92%),
+         url('/dist/img/background/bartender.png') 0% 0%/120% no-repeat,
+        #000;
+        height: 100%;
+        &__container {
+            flex-direction: column-reverse;
+            padding-top: 140px;
+            &-text {
+                margin-left: 25px;
+            }
+        }
+        &__phones {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+                margin-top: 55px;
+            }
+        }
+    }
+
+    .business {
+        padding-bottom: 0;
+        &__icons {
+            img {
+                max-width: 30%;
+                &:nth-child(1) {
+                    top: 180px;
+                    right: -250px;
+                }
+                &:nth-child(2) {
+                    right: 80px;
+                    top: 50px;
+                }
+                &:nth-child(3) {
+                    display: none;
+                }
+                &:nth-child(4) {
+                    right: 60px;
+                    top: 65px;
+                }
+                &:nth-child(5) {
+                    right: -260px;
+                    top: -60px;
+                }
+                &:nth-child(6) {
+                    right: 0;
+                    top: 15px;
+                }
+                &:nth-child(7) {
+                    right: -220px;
+                    top: 30px;
+                    max-width: 40%;
+                }
+            }
+        }
+    }
+
+    .nightlife {
+        background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%),
+        url('/dist/img/background/deejay.png') 0% 0%/100% no-repeat,
+        url('/dist/img/background/cocktail.png') 90px 60%/80% no-repeat,
+        #000;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 600px;
+        &__logo {
+            left: 10%;
+            top: 60px;
+            max-width: 70%;
+        }
+        &__phone {
+            top: 100px;
+            left: 40px;
+            max-width: 80%;
+        }
+    }
+
+    .qr {
+        max-height: 100%;
+        &__phone {
+            top: -180px;
+            left: 40px;
+            max-width: 80%;
+        }
+        &__content {
+            position: relative;
+            top: -1125px;
+            a img {
+                margin-top: 0;
+            }
+        }
+        &__app {
+            padding-left: 50px;
+        }
+    }
+
+    .generate {
+        background: url('/dist/img/background/notab.png') 60% 65%/100% no-repeat,
+        url('/dist/img/background/flash.png') center/cover no-repeat,
+        #000;
+        .container {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        &__content {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 20px;
+            padding-bottom: 40px;
+        }
+        &__title {
+            max-width: 100%;
+        }
+        &__phone {
+            max-width: 60%;
+        }
+    }
+
+    .features {
+        height: 800px;
+        background: url('/dist/img/background/iphoneback.png') center 400px/100% no-repeat,
+        url('/dist/img/background/flash2.png') 90% 0%/50% no-repeat,
+        #000;
+            &__content {
+            margin-left: 0px;
+            padding-left: 20px;
+            padding-bottom: 200px;
+        }
+        &__block {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+            padding: 12px;
+            &:nth-child(1) {
+                top: -150px;
+                left: 47px;
+            }
+            &:nth-child(2) {
+                top: -45px;
+                left: 30px;
+            }
+            &:nth-child(3) {
+                top: 330px;
+                left: 239px;
+            }
+            &:nth-child(4) {
+                top: 200px;
+                left: -74px;
+            }
+        }
+    }
+
+    .feedback {
+        background: url('/dist/img/background/flash4.png') 103% 130%/70% no-repeat,
+        url('/dist/img/background/flash3.png') -20% 0%/90% no-repeat,
+        #000;
+        padding-top: 50px;
+        &__title {
+            justify-content: space-around;
+        }
+        &__content {
+            padding-bottom: 30px;
+            max-width: 85%;
+        }
+        input {
+            box-sizing: border-box;
+            max-width: 90%;
+            max-height: 50px;
+            padding-left: 10px;
+            margin-bottom: 16px;
+            font-size: 16px;
+        }
+        textarea {
+            box-sizing: border-box;
+            max-width: 90%;
+            padding-left: 10px;
+            font-size: 16px;
+            max-height: 140px;
+        }
+        button {
+            max-width: 90%;
+            margin-top: 30px;
+
+        }
+    }
+
+    .footer {
+        &__app {
+            align-items: center;
+            padding-right: 7%;
+        }
+        &__content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a img {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+        }
+        &__container {
+            margin-top: 50px;
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+
+        &__contacts {
+            text-align: center;
+            margin-top: 20px;
+        }
+        &__privacy {
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 25px;
+            a {
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    .notab {
+        display: none;
+    }
+
+    .cookie {
+        justify-content: space-between;
+        padding: 5px;
+        p {
+            width: 70%;
+            padding-left: 5px !important;
+        }
+        button {
+            width: 92px !important;
+            margin-right: 0 !important;
+            padding: 5px;
+        }
+    }
+
+    .app {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .title {
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}

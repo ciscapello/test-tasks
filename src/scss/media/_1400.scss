@@ -1,0 +1,59 @@
+@media (min-width: 1200px) and (max-width: 1400px) {
+    .intro {
+        background: url('/dist/img/background/ellipse1.png') center/cover no-repeat,
+        url('/dist/img/background/line.png') no-repeat 3% 55%,
+        url('/dist/img/background/ellipse2.png') no-repeat -4% 55%,
+         #000;
+        &__body {
+            &_phone {
+                right: 350px;
+            }
+        }
+    }
+    
+    .mission {
+        &__block {
+            width: 30%;
+            justify-content: space-around;
+            font-size: 22px;
+        }
+        &__about{
+            flex-direction: column;
+            max-height: 100%;
+            &-content {
+                position: relative;
+            }
+            &-phone {
+                left: -400px;
+            }
+        }
+    }
+
+    .qr {
+        max-height: 100%;
+        &__phone {
+            position: relative;
+            top: 0px;
+            left: 650px;
+        }
+    }
+
+    .cookie {
+     max-width: 100%;
+    }
+
+    .business {
+        &__icons {
+            img:nth-child(7) {
+                right: -700px;
+            }
+        }
+    }
+
+    .nightlife {
+        &__logo {
+            right: -1018px;
+        }
+    }
+
+}

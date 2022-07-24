@@ -1,0 +1,95 @@
+@media (min-width: 426px) and (max-width: 768px) {
+    .business {
+    &__content {
+        padding-top: 900px;
+    }
+    &__icons {
+        img {
+            &:nth-child(1) {
+                right: -445px;
+            }
+            &:nth-child(2) {
+                right: -180px;
+            }
+            &:nth-child(6) {
+                right: 25px;
+            }
+        }
+    }
+}
+
+.nightlife {
+    &__phone {
+        right: -256px;
+        top: 64px;
+    }
+}
+
+.qr {
+    &__phone {
+        position: static;
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 20px;
+    }
+}
+
+.features {
+    &__content {
+        margin-left: 20px;
+    }
+    &__block {
+        padding: 10px;
+        font-size: 16px;
+        &:nth-child(1) {
+            top: 0px;
+            left: 50px;
+        }
+        &:nth-child(2) {
+            top: 25px;
+            left: 238px
+        }
+        &:nth-child(3) {
+            top: 258px;
+            left: 238px;
+        }
+        &:nth-child(4) {
+            top: 254px;
+            right: 280px;
+        }
+    }
+}
+
+.nightlife {
+    &__logo {
+        right: -573px;
+    }
+}
+}
+
+.feedback {
+    &__form {
+        input {
+            box-sizing: border-box;
+            max-width: 90%;
+            max-height: 50px;
+            padding-left: 10px;
+            margin-bottom: 16px;
+            font-size: 16px;
+            &:nth-child(3) {
+                margin-right: 0;
+                width: 818px;
+            }
+            &:nth-child(4) {
+                width: 818px;
+            }
+        }
+        textarea {
+            box-sizing: border-box;
+            max-width: 90%;
+            padding-left: 10px;
+            font-size: 16px;
+            max-height: 140px;
+        }
+    }
+}

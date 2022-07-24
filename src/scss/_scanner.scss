@@ -1,0 +1,13 @@
+.scanner {
+    height: 1060px;
+    background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%),
+    url('/dist/img/background/bartender.png') center/cover no-repeat;
+    &__container {
+        padding-top: 500px;
+        display: flex;
+        justify-content: space-between;
+        &-text {
+            padding-top: 22%;
+        }
+    }
+}

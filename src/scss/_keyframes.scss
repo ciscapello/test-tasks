@@ -1,0 +1,14 @@
+@keyframes phone {
+    to {
+        transform: rotate(0) scale(0.8);
+        left: 280px;
+    }
+}
+
+@keyframes text {
+    to {
+        transform: translateX(150px);
+        opacity: 0.5;
+        display: none;
+    }
+}

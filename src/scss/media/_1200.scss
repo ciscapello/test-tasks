@@ -1,0 +1,73 @@
+@media (min-width: 1024px) and (max-width: 1200px) {
+
+    .intro {
+        &__body {
+            &_phone {
+                right: 370px;
+            }
+            &_text {
+                h1 {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
+
+    .business {
+        &__icons {
+            img {
+                &:nth-child(1) {
+                    right: -730px;
+                }
+                &:nth-child(6) {
+                    right: -600px;
+                }
+                &:nth-child(5) {
+                    right: 70px;
+                }
+                &:nth-child(7) {
+                    right: -600px;
+                }
+                
+            }
+        }
+    }
+
+    .nightlife {
+        &__logo {
+            right: -875px;
+        }
+    }
+
+    .qr {
+        &__content {
+            a img {
+                margin-top: 20%;
+            }
+            padding-left: 10%;
+        }
+    }
+
+    .title {
+        font-size: 38px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .feedback__form {
+        .input {
+            width: 650px;
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .generate {
+        &__content {
+            justify-content: space-around;
+        }
+    }
+} 

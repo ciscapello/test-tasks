@@ -1,0 +1,24 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .mission {
+    &__blocks {
+        justify-content: space-around;
+    }
+    &__about {
+        &-phone {
+            max-width: 50%;
+        }
+    }
+}
+
+.business__icons {
+    img {
+        &:nth-child(5) {
+            right: -330px;
+        }
+        &:nth-child(7) {
+            right: -95px;
+        }
+    }
+}
+}
+

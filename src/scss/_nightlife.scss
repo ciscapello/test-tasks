@@ -1,0 +1,16 @@
+.nightlife {
+    background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%),
+    url('/dist/img/background/deejay.png') no-repeat 0% 0%,
+    url('/dist/img/background/cocktail.png') no-repeat 100% 0,
+    #000;
+    &__logo {
+        position: relative;
+        right: -1075px;
+        top: -625px;
+    }
+    &__phone {
+        position: relative;
+        right: -350px;
+        top: 250px;
+    }
+}
