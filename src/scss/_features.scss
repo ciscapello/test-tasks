@@ -1,8 +1,8 @@
 .features {
     padding-top: 150px;
     height: 1000px;
-    background: url('/dist/img/background/iphoneback.png') center 300px/50% no-repeat,
-    url('/dist/img/background/flash2.png') 100% 0%/50% no-repeat,
+    background: url('/src/img/background/iphoneback.png') center 300px/50% no-repeat,
+    url('/src/img/background/flash2.png') 100% 0%/50% no-repeat,
     #000;
     &__content {
         display: block;
@@ -18,22 +18,22 @@
         font-style: normal;
         font-weight: 500;
         font-size: 22px;
-        &:nth-child(1) {
+        &-1 {
             position: relative;
             top: 230px;
             left: 190px;
         }
-        &:nth-child(2) {
+        &-2 {
             position: relative;
             top: 100px;
             left: 370px;
         }
-        &:nth-child(3) {
+        &-3 {
             position: relative;
             top: 470px;
             left: 290px;
         }
-        &:nth-child(4) {
+        &-4 {
             position: relative;
             top: 520px;
             right: 280px;

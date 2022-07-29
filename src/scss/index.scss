@@ -21,3 +21,9 @@
 body {
     margin: 0;
 }
+
+@font-face {
+	font-family: 'AvenirNextCyr-Light';
+	src: url('./fonts/avenirnextcyr-light.woff2') format('woff2'),
+		url('./fonts/avenirnextcyr-light.woff') format('woff');
+}

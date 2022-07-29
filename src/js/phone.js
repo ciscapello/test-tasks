@@ -10,13 +10,8 @@ export default function phoneAnimation () {
     let offset = container.getBoundingClientRect().top + document.documentElement.scrollTop;
     let contOffset = container.offsetHeight;
     
-    window.addEventListener('scroll', (e) => {
-        console.log(document.documentElement.scrollTop);
-        console.log(offset);
-        console.log(contOffset);
-        console.log(container.getBoundingClientRect().top)
+    window.addEventListener('scroll', () => {
         if (container.getBoundingClientRect().top < 0) {
-            console.log('done');
             img.style.animationName = 'phone';
             block.style.animationName = 'text';
             

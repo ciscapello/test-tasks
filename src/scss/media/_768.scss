@@ -1,95 +1,165 @@
 @media (min-width: 426px) and (max-width: 768px) {
-    .business {
-    &__content {
-        padding-top: 900px;
+    .intro {
+        &__app {
+            flex-direction: column;
+        }
     }
-    &__icons {
-        img {
-            &:nth-child(1) {
-                right: -445px;
+
+    .business {
+        &__content {
+            padding-top: 900px;
+        }
+        &__icon {
+            max-width: 30%;
+        }
+        &__icons {
+            margin-top: 50%;
+            &-1 {
+                display: none;
             }
-            &:nth-child(2) {
+            &-2 {
                 right: -180px;
             }
-            &:nth-child(6) {
+            &-6 {
                 right: 25px;
             }
+            &-7 {
+                display: none;
+            }
         }
     }
-}
 
-.nightlife {
-    &__phone {
-        right: -256px;
-        top: 64px;
-    }
-}
-
-.qr {
-    &__phone {
-        position: static;
-        margin: 0 auto;
-        display: block;
-        padding-bottom: 20px;
-    }
-}
-
-.features {
-    &__content {
-        margin-left: 20px;
-    }
-    &__block {
-        padding: 10px;
-        font-size: 16px;
-        &:nth-child(1) {
-            top: 0px;
-            left: 50px;
+    .nightlife {
+        &__logo {
+            right: -68%;
         }
-        &:nth-child(2) {
-            top: 25px;
-            left: 238px
-        }
-        &:nth-child(3) {
-            top: 258px;
-            left: 238px;
-        }
-        &:nth-child(4) {
-            top: 254px;
-            right: 280px;
+        &__phone {
+            right: -30%;
+            max-width: 40%;
         }
     }
-}
 
-.nightlife {
-    &__logo {
-        right: -573px;
+    .qr {
+        &__phone {
+            position: static;
+            margin: 0 auto;
+            display: block;
+            padding-bottom: 20px;
+        }
+        &__app {
+            display: none;
+        }
     }
-}
-}
 
-.feedback {
-    &__form {
-        input {
-            box-sizing: border-box;
-            max-width: 90%;
-            max-height: 50px;
-            padding-left: 10px;
-            margin-bottom: 16px;
+    .features {
+        &__content {
+            margin-left: 20px;
+        }
+        &__block {
+            padding: 10px;
             font-size: 16px;
-            &:nth-child(3) {
+            &-1 {
+                top: 0px;
+                left: 50px;
+            }
+            &-2 {
+                top: 25px;
+                left: 238px
+            }
+            &-3 {
+                top: 258px;
+                left: 20%;
+            }
+            &-4 {
+                top: 254px;
+                right: 280px;
+            }
+        }
+    }
+
+    .mission {
+        &__about {
+            img {
+                max-width: 50%;
+            }
+        }
+        &__blocks {
+            flex-wrap: wrap;
+        }
+    }
+
+    .feedback {
+        &__form {
+            &-input3 {
                 margin-right: 0;
-                width: 818px;
+                width: 40%;
             }
-            &:nth-child(4) {
-                width: 818px;
+            &input4 {
+                width: 40%;
+            }
+            .input:not(.textarea) {
+                box-sizing: border-box;
+                max-width: 80%;
+                max-height: 50px;
+                padding-left: 10px;
+                margin-bottom: 16px;
+                font-size: 16px;
+                
+            }
+            .textarea {
+                box-sizing: border-box;
+                max-width: 90%;
+                padding-left: 10px;
+                font-size: 16px;
+                max-height: 140px;
             }
         }
-        textarea {
-            box-sizing: border-box;
-            max-width: 90%;
-            padding-left: 10px;
-            font-size: 16px;
-            max-height: 140px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 600px) {
+    .features {
+        &__block {
+            &-2 {
+                left: 19%;
+            }
+            &-3 {
+                left: -10%;
+            }
         }
+    }
+
+    .business {
+        &__icons {
+            &-4 {
+                right: 5%;
+            }
+        }
+    }
+
+    .scanner {
+        &__container {
+            justify-content: flex-end;
+        }
+    }
+
+    .footer {
+        &__app {
+            &-img {
+                min-width: 0%;
+            }
+        }
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+    
+    .notab {
+        display: none;
     }
 }

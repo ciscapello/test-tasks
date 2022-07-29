@@ -1,13 +1,9 @@
 .footer {
     padding-top: 30px;
-    background: url("/dist/img/background/flash5.png") 77% 40px/cover no-repeat,
+    background: url("/src/img/background/flash5.png") 77% 40px/100% no-repeat,
     #000;
     &__content {
         text-align: center;
-        a img {
-            margin-top: 32px;
-            margin-bottom: 150px;
-        }
     }
     &__title {
         font-family: 'Noto Sans';
@@ -25,30 +21,30 @@
         &-email {
             font-family: 'Montserrat';
         }
-        p {
-            font-family: 'Noto Sans';
-            a {
+        &-paragraph {
+            font-family: 'AvenirNextCyr-Light', sans-serif;
+            &-link {
                 text-decoration: none;
-                color: #fff;    
+                color: #fff;
             }
         }
     }
     &__app {
         justify-content: center;
         column-gap: 50px;
-        a {
-            img {
-                min-width: 120%
-            }
+        &-img {
+                min-width: 120%;
+                margin-top: 32px;
+                margin-bottom: 150px;
         }
     }
     &__privacy {
-        a {
+        &-link {
             display: inline-block;
             margin-bottom: 30px;
             text-decoration: none;
             color: #fff;
-            font-family: 'Noto Sans';
+            font-family: 'AvenirNextCyr-Light', sans-serif;
         }
     }
 }

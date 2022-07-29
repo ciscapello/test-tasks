@@ -44,11 +44,9 @@
 .app {
     display: flex;
     column-gap: 25px;
-    a {
-        img {
-            &:hover {
-                opacity: 0.5;
-            }
+    &__img {
+        &:hover {
+            opacity: 0.5;
         }
     }
 }

@@ -1,8 +1,8 @@
 .intro {
-    background: url('/dist/img/iphone.png') 100% 10%/45% no-repeat,
-    url('/dist/img/background/ellipse1.png') center/cover no-repeat,
-    url('/dist/img/background/line.png') no-repeat 10% 65%,
-    url('/dist/img/background/ellipse2.png') no-repeat 1% 65%,
+    background: url('/src/img/iphone.png') 100% 10%/45% no-repeat,
+    url('/src/img/background/ellipse1.png') center/cover no-repeat,
+    url('/src/img/background/line.png') no-repeat 10% 65%,
+    url('/src/img/background/ellipse2.png') no-repeat 1% 65%,
      #000;
     min-height: 700px;
     &__header {
@@ -26,20 +26,20 @@
         display: flex;
         justify-content: start;
         column-gap: 180px;
-        &_text {
+        &-text {
             display: flex;
             min-width: 60%;
             min-height: 700px;
             flex-direction: column;
             justify-content: center;
             color: #fff;
-            h1 {
+            &-title {
                 font-family: 'Monterrat', sans-serif;
                 font-weight: 700;
                 font-size: 64px;
                 line-height: 70px;
             }
-            p {
+            &-paragraph {
                 margin-left: 15%;
                 font-family: 'Noto Sans', sans-serif;
                 font-style: normal;
@@ -62,7 +62,7 @@
         align-items: center;
         position: relative;
         bottom: -150px;
-        h2 {
+        &-title {
             color: #fff;
             font-family: 'Montserrat';
             font-style: normal;
@@ -77,8 +77,8 @@
                 background-color: #fff;
             }
         }
-        a {
-            z-index: 2;
-        }
+    }
+    &__app {
+        z-index: 2;
     }
 }

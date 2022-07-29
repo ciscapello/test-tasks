@@ -5,9 +5,11 @@
         position: relative;
         top: -150px;
     }
-    a img {
-        margin-top: 50px;
-    }
+    &__app {
+        &-img {
+            margin-top: 50px;
+        }
+    } 
     &__phone {
         position: relative;
         top: -480px;

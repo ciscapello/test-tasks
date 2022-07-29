@@ -10,15 +10,107 @@
     }
 }
 
-.business__icons {
-    img {
-        &:nth-child(5) {
+    .business__icons {
+        &-5 {
             right: -330px;
         }
-        &:nth-child(7) {
+        &-7 {
             right: -95px;
         }
     }
-}
+
+    .qr {
+        &__phone {
+            max-width: 20%;
+            right: -70%;
+            top: -64px;
+        }
+    }
+
+    .business {
+        &__icons {
+            &-1 {
+                right: -60%;
+            }
+            &-6 {
+                right: -550px;
+            }
+        }
+    }
+    
+    .mission {
+        &__about {
+            &-content {
+                margin-right: 150px;
+                max-width: 300px;
+            }
+        }
+    }
+
+    .nightlife {
+        &__phone {
+            max-width: 20%;
+        }
+        &__logo {
+            right: -80%;
+            top: -450px;
+        }
+    }
+
+    .features {
+        &__content {
+            margin-left: 450px;
+        }
+        &__block {
+            &-2 {
+                left: 30%;
+            }
+            &-3 {
+                left: 10%;
+            }
+        }
+    }
+
+    .business {
+        &__content {
+            padding-top: 105%;
+        }
+        &__icons {
+            &-2 {
+                right: -20%;
+            }
+            &-6 {
+                right: 10%;
+            }
+            &-4 {
+                right: 5%;
+            }
+            &-7 {
+                right: 40%;
+                top: 40px;
+            }
+        }
+    }
+
+    .feedback {
+        &__form {
+            &-input3 {
+                max-width: 40%;
+            }
+            &-input4 {
+                max-width: 40%;
+            }
+        }
+        .input {
+            max-width: 80%;
+        }
+    }
+
+    .text {
+        font-size: 14px;
+    }
+    .title {
+        font-size: 30px;
+    }
 }
 

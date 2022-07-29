@@ -10,6 +10,16 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/scss/index.scss":
+/*!*****************************!*\
+  !*** ./src/scss/index.scss ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://test-project/./src/scss/index.scss?");
+
+/***/ }),
+
 /***/ "./src/js/cookie.js":
 /*!**************************!*\
   !*** ./src/js/cookie.js ***!
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _validation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./validation */ \"./src/js/validation.js\");\n/* harmony import */ var _cookie__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cookie */ \"./src/js/cookie.js\");\n/* harmony import */ var _phone__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./phone */ \"./src/js/phone.js\");\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', () => {\n\n    (0,_validation__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n    (0,_cookie__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n    (0,_phone__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n})\n\n\n//# sourceURL=webpack://test-project/./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _validation__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./validation */ \"./src/js/validation.js\");\n/* harmony import */ var _cookie__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./cookie */ \"./src/js/cookie.js\");\n/* harmony import */ var _phone__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./phone */ \"./src/js/phone.js\");\n/* harmony import */ var _scss_index_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scss/index.scss */ \"./src/scss/index.scss\");\n\n\n\n\n\n\ndocument.addEventListener('DOMContentLoaded', () => {\n\n    (0,_validation__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n    (0,_cookie__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n    (0,_phone__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n})\n\n\n//# sourceURL=webpack://test-project/./src/js/index.js?");
 
 /***/ }),
 
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _val
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ phoneAnimation)\n/* harmony export */ });\nlet img = document.querySelector('.mission__about-phone');\nlet block = document.querySelector('.mission__about-content');\nlet container = document.querySelector('.mission');\n\nfunction phoneAnimation () {\n    if (window.screen.width < 900) {\n        return false\n    }\n\n    let offset = container.getBoundingClientRect().top + document.documentElement.scrollTop;\n    let contOffset = container.offsetHeight;\n    \n    window.addEventListener('scroll', (e) => {\n        console.log(document.documentElement.scrollTop);\n        console.log(offset);\n        console.log(contOffset);\n        console.log(container.getBoundingClientRect().top)\n        if (container.getBoundingClientRect().top < 0) {\n            console.log('done');\n            img.style.animationName = 'phone';\n            block.style.animationName = 'text';\n            \n        }\n    });\n}\n\n//# sourceURL=webpack://test-project/./src/js/phone.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ phoneAnimation)\n/* harmony export */ });\nlet img = document.querySelector('.mission__about-phone');\nlet block = document.querySelector('.mission__about-content');\nlet container = document.querySelector('.mission');\n\nfunction phoneAnimation () {\n    if (window.screen.width < 900) {\n        return false\n    }\n\n    let offset = container.getBoundingClientRect().top + document.documentElement.scrollTop;\n    let contOffset = container.offsetHeight;\n    \n    window.addEventListener('scroll', () => {\n        if (container.getBoundingClientRect().top < 0) {\n            img.style.animationName = 'phone';\n            block.style.animationName = 'text';\n            \n        }\n    });\n}\n\n//# sourceURL=webpack://test-project/./src/js/phone.js?");
 
 /***/ }),
 
@@ -46,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ validation)\n/* harmony export */ });\nlet inputs = document.querySelectorAll('.input');\nlet form = document.querySelector('form');\n\n\n\nfunction validation () {\n    form.addEventListener('submit', (e) => {\n        e.preventDefault();\n        let form = [];\n        inputs.forEach((input) => {\n            if (!input.value) {\n                input.classList.add('invalid')\n            } else {\n                input.classList.remove('invalid')\n                form.push(`${input.name}: ${input.value}`)\n            }\n        })\n        console.log(form);\n        if (form.length < 7) return false;\n    });\n}\n\n//# sourceURL=webpack://test-project/./src/js/validation.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ validation)\n/* harmony export */ });\nlet inputs = document.querySelectorAll('.input');\nlet email = document.querySelector('.feedback__form-input5');\nlet form = document.querySelector('form');\n\n\n\nfunction validation () {\n    form.addEventListener('submit', (e) => {\n        e.preventDefault();\n        let regExp = /^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$/;\n        if (!regExp.test(email.value)) {\n            email.classList.add('invalid');\n            return false;\n        };\n        let formData = [];\n        inputs.forEach((input) => {\n            if (!input.value) {\n                input.classList.add('invalid')\n            } else {\n                input.classList.remove('invalid')\n                form.push(`${input.name}: ${input.value}`)\n            }\n        })\n        console.log(formData);\n        if (formData.length < 7) return false;\n    });\n}\n\n//# sourceURL=webpack://test-project/./src/js/validation.js?");
 
 /***/ })
 

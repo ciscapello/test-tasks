@@ -11,54 +11,53 @@ let offset = 0;
 sliderLine.style.left = '0px';
 width = 400;
 
-function refreshNode(index) {
-    sliderLine.innerHTML = '';                                  // Очищаем sliderLine
-    for (let counter = 0; counter < slides.length; counter++) { // В цикле проходимся по элементам
-        sliderLine.appendChild(slides[index]);                  // начиная с индекса выбранной точки
-        index = index + 1;                                      // и вставляем их в sliderLine
-        if (index > slides.length - 1) index = 0;
-    }
-}
-
 dots.forEach((dot, index) => {
-    dot.addEventListener('click', () => {
+    dot.addEventListener('click', async () => {
         if (dot.classList.contains('active-dot')) {
             return false;
         }
-        slideIndex = index;
-        document.querySelector('.active-dot').classList.remove('active-dot');
-        dot.classList.add('active-dot');
-        refreshNode(index);
+
+        if (index < slideIndex) {                       // в зависимости от кликнутой точки формируем 
+            let counter = slideIndex - index;           // количество раз, которое нужно перелистнуть
+            turnBack(counter);                          // слайдер и передаем это число в функцию
+        }
+
+        if (index > slideIndex) {
+            let counter = index - slideIndex;
+            turnNext(counter);
+        }
     })
 })
 
-
-prev.addEventListener('click', () => {
+function turnBack (i = 1) {
     slideIndex = (slideIndex > 0) ? slideIndex - 1 : slides.length - 1;
     document.querySelector('.active-dot').classList.remove('active-dot');
     dotsLine.children[slideIndex].classList.add('active-dot');  // Переключаем класс активности
     disableButtons();
     sliderLine.prepend(sliderLine.lastElementChild);    // Вставляем последнюю картинку вперёд
-    offset = -(width);                                  // и задаем отступ, чтобы плавно на нее перейти
+    offset = -(width);                               // и задаем отступ, чтобы плавно на нее перейти                               
     let timer = setInterval(() => {
-        offset = offset + 2;
+        offset = offset + 4;
         if (offset >= 0) {
             clearInterval(timer);
             enableButtons();
         };
         sliderLine.style.left = `${offset}px`;
-    }, 1);
-});
+    }, 2);
+    i = i - 1;
+    if (i) {                                // рекурсивно вызываем функцию переданное количество раз
+        turnBack(i);                        // Если число не передали, листаем один раз
+    }
+}
 
-
-next.addEventListener('click', () => {
+function turnNext (i = 1) {
     slideIndex = (slideIndex < slides.length - 1) ? slideIndex + 1 : 0;
     document.querySelector('.active-dot').classList.remove('active-dot');
     dotsLine.children[slideIndex].classList.add('active-dot');
     disableButtons();
     let nextOffset = offset - width;
     let timer = setInterval(() => {
-        offset = offset - 2;
+        offset = offset - 4;
         if (offset <= nextOffset) {
             clearInterval(timer);
             enableButtons();
@@ -68,7 +67,15 @@ next.addEventListener('click', () => {
         }
         sliderLine.style.left = `${offset}px`;
     }, 1);
-});
+    i = i - 1;
+    if (i) {
+        turnNext(i);
+    }
+}
+
+
+prev.addEventListener('click', turnBack);
+next.addEventListener('click', turnNext);
 
 
 function disableButtons() {   

@@ -5,30 +5,35 @@
             &_phone {
                 right: 370px;
             }
-            &_text {
-                h1 {
+            &-text {
+                &-title {
                     font-size: 50px;
                 }
             }
         }
     }
 
+    .mission {
+        &__about {
+            &-content {
+                margin-right: 150px;
+            }
+        }
+    }
+
     .business {
         &__icons {
-            img {
-                &:nth-child(1) {
-                    right: -730px;
-                }
-                &:nth-child(6) {
-                    right: -600px;
-                }
-                &:nth-child(5) {
-                    right: 70px;
-                }
-                &:nth-child(7) {
-                    right: -600px;
-                }
-                
+            &-1 {
+                right: -730px;
+            }
+            &-6 {
+                right: -600px;
+            }
+            &-5 {
+                right: 70px;
+            }
+            &-7 {
+                right: -300px;
             }
         }
     }
@@ -36,6 +41,10 @@
     .nightlife {
         &__logo {
             right: -875px;
+        }
+        &__phone {
+            max-width: 24%;
+            right: -408px;
         }
     }
 
@@ -46,18 +55,22 @@
             }
             padding-left: 10%;
         }
+        &__phone {
+            max-width: 20%;
+            right: -830px;
+        }
     }
 
     .title {
-        font-size: 38px;
+        font-size: 32px;
     }
 
     .text {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .feedback__form {
-        .input {
+        .input:not(.textarea) {
             width: 650px;
             &:nth-child(3) {
                 margin-right: 0;
@@ -70,4 +83,45 @@
             justify-content: space-around;
         }
     }
+    @keyframes text {
+        to {
+            transform: translateX(130px);
+            opacity: 0.5;
+            display: none;
+        }
+    }
+
 } 
+
+@media (min-width: 1087px) and (max-width: 1135px) {
+    .qr {
+        &__phone {
+            max-width: 22%;
+            right: -845px;
+        }
+    }
+}
+
+@media (min-width: 1068px) and (max-width: 1086px) {
+    .business {
+        &__icons {
+            &-7 {
+                right: 113px !important;
+            }
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1067) {
+    .qr {
+        &__phone {
+            max-width: 20%;
+            right: -828px;
+        }
+    }
+    .nightlife {
+        &__phone {
+            max-width: 20%;
+        }
+    }
+}

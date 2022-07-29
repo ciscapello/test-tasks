@@ -1,8 +1,8 @@
 @media (min-width: 1200px) and (max-width: 1400px) {
     .intro {
-        background: url('/dist/img/background/ellipse1.png') center/cover no-repeat,
-        url('/dist/img/background/line.png') no-repeat 3% 55%,
-        url('/dist/img/background/ellipse2.png') no-repeat -4% 55%,
+        background: url('/src/img/background/ellipse1.png') center/cover no-repeat,
+        url('/src/img/background/line.png') no-repeat 3% 55%,
+        url('/src/img/background/ellipse2.png') no-repeat -4% 55%,
          #000;
         &__body {
             &_phone {
@@ -44,7 +44,7 @@
 
     .business {
         &__icons {
-            img:nth-child(7) {
+            &-7 {
                 right: -700px;
             }
         }

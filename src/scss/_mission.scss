@@ -1,5 +1,5 @@
 .mission {
-    background: url('/dist/img/background/ellipse2.png') no-repeat 95% 63%, #000;
+    background: url('/src/img/background/ellipse2.png') no-repeat 95% 63%, #000;
     padding-top: 61px;
 
     &__blocks {
@@ -15,8 +15,8 @@
         font-family: 'Noto Sans';
         font-weight: 700;
         font-size: 30px;
-        &:nth-child(2) {
-            padding: 60px 73px 44px 55px;
+        &-1 {
+            padding: 20px 73px 44px 55px;
         }
         &-link {
             margin-left: 0;

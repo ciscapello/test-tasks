@@ -1,8 +1,8 @@
 .feedback {
     padding-top: 180px;
     padding-bottom: 40px;
-    background: url('/dist/img/background/flash4.png') 100% 60%/30% no-repeat,
-    url('/dist/img/background/flash3.png') 20% -10%/50% no-repeat,
+    background: url('/src/img/background/flash4.png') 100% 60%/30% no-repeat,
+    url('/src/img/background/flash3.png') 20% -10%/50% no-repeat,
     #000;
     &__content {
         text-align: center;
@@ -11,14 +11,15 @@
     }
     &__form {
         text-align: center;
-        :nth-child(3) {
-            width: 397px;
+        &-input3 {
+            width: 397px !important;
             margin-right: 23px;
         }
-        :nth-child(4) {
-            width: 397px;
+        &-input4 {
+            width: 397px !important;
+
         }
-        input {
+        .input:not(.textarea) {
             box-sizing: border-box;
             width: 818px;
             height: 81px;
@@ -26,14 +27,14 @@
             margin-bottom: 23px;
             padding: 20px;
         }
-        textarea {
+        .textarea {
             padding: 20px;
             box-sizing: border-box;
             border-radius: 10px;
             width: 819px;
             height: 199px;
         }
-        button {
+        &-btn {
             margin-top: 60px;
             padding: auto;
             box-sizing: border-box;
@@ -56,13 +57,6 @@
     }
 }
 
-// .input:required {
-//     border: 2px solid black;
-//     &:invalid {
-//         border: 2px solid red;
-//     }
-// }
-  
 .invalid {
     border: 2px solid red;
 }

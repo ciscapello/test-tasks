@@ -11,7 +11,7 @@
     bottom: -100px;
     transition: 800ms;
     z-index: 40;
-    p {
+    &__message {
         padding-left: 100px;
         color: #fff;
         font-family: 'Noto Sans';
@@ -19,7 +19,7 @@
         font-size: 14px;
         line-height: 19px;
     }
-    button {
+    &__btn {
         margin-right: 24px;
         width: 132px;
         height: 50px;
